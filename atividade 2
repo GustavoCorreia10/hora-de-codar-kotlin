@@ -1,0 +1,16 @@
+/*
+* Crie uma bomba relógio (usando somente código - para deixar claro!)
+* cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para
+* escrever em tela e no final da repetição escreva "EXPLOSÃO".
+* */
+
+fun main(){
+    var bomba : Int = 30
+    println("$bomba segundos restantes")
+    while(bomba > 0){
+        Thread.sleep(1000)
+        bomba--
+        println("$bomba segundos restantes")
+    }
+    println("EXPLOSÃO")
+}
